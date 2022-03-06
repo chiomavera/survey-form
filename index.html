@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey-form</title>
+
+    <!-- style sheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Chioma Vera Nkanmuo</h1>
+            <p id="description" class="description text-center">Please spare five minutes of your time to fill out this
+                to help me serve you better</p>
+            <p id="mandatory" class="description text-center">---All fields marked with * are mandatory---</p>
+        </header>
+    </div>
+
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name<span class="clue">*</span></label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required
+                autofocus />
+        </div>
+
+        <div class="form-group">
+            <label id="email-label" for="email">Email<span class="clue">*</span></label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address"
+                required autofocus />
+        </div>
+
+        <div class="form-group">
+            <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+            <input type="number" id="number" name="age" class="form-control" placeholder="Age" autofocus min="10"
+                max="99" />
+        </div>
+
+        <div class="form-group">
+            <p>How frequently do you wish to recieve my Newsletter </p>
+            <select id="dropdown" name="newsletter" class="form-control" required>
+                <option disabled selected value="select">select an option</option>
+                <option value="daily">Daily</option>
+                <option value="weekly">weekly</option>
+                <option value="monthly">monthly</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>Would You recommend me to a friend?</p>
+            <label>
+                <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />
+                Definitely
+            </label>
+            <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe 
+            </label><br>
+            </label>
+            <input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not Sure
+            </label>
+        </div>
+
+        <div class="form-group">
+            <p>Which newsletter content do you prefer?
+                <span id="clue">(Check all that apply)</span>
+            </p>
+            <label><input type="checkbox" class="input-checkbox" name="prefer" value="Web Development" />
+                Web Development</label>
+            <label><input type="checkbox" class="input-checkbox" name="prefer" value="personal Development" />
+                personal Development</label>
+            <label><input type="checkbox" class="input-checkbox" name="prefer" value="health" />
+                Health</label>
+        </div>
+
+        <div class="form-group">
+            <p>
+                How did you learn about me?
+            </p>
+            <select id="learn" name="learn" class="form-control" required>
+                <option disabled selected value="select">Select an option</option>
+                <option value="instagram">Instagram</option>
+                <option value="twitter">Twitter</option>
+                <option value="facebook">Facebook</option>
+                <option value="friend">Friend</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea id="comments" class="input-textarea" name="comment"
+                placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+                Submit
+            </button>
+        </div>
+    </form>
+</body>
+
+</html>
