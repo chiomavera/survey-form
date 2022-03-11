@@ -1,7 +1,5 @@
 :root {
     --color-white: #f3f3f3;
-    --color-darkred: #923A23;
-    --color-darkred-alpha: rgba(253, 72, 59, 0.9);
     --color-red: #eb0410;
 }
   
@@ -26,10 +24,11 @@ body::before {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background: var(--color-darkred);
-    background-image: linear-gradient(115deg, rgba(252, 102, 92, 0.9),
-     rgba(250, 165, 159, 0.9)),
-    url(https://ncte.org/wp-content/uploads/2018/09/Classroom-community-768x512.jpg);
+    background: black;
+    background-image: linear-gradient(45deg, rgba(10, 9, 9, 0.9),
+       rgba(3, 3, 3, 0.925)),
+       url(https://ncte.org/wp-content/uploads/2018/09/Classroom-community-768x512.jpg);  
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -66,17 +65,21 @@ h1, p {
 
 .description {
     font-style: italic;
-    font-weight: 200;
+    font-size: 12px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 /* form */
 
 form {
-    background: var(--color-darkred-alpha);
+    background: #fff;
+    color: #000;
     padding: 2.5rem 0.625rem;
     border-radius: 0.25rem;
     margin:auto;
+    margin:auto auto 30px;
+    width: 80%;
+
 }
 
 label {
@@ -93,6 +96,11 @@ input, button, select, textarea {
   line-height: inherit;
 }
 
+textarea:focus{
+    outline: 0.1rem solid purple;
+}
+  
+
 .form-group {
     margin: 0 auto 1.25rem auto;
     padding: 0.25rem; 
@@ -101,7 +109,7 @@ input, button, select, textarea {
 .clue {
     margin-left: 0.25rem;
     font-size: 0.9rem;
-    color: #e4e4e4;
+    color: var( --color-red);
 }
 
 .form-control {
@@ -109,23 +117,19 @@ input, button, select, textarea {
     width: 100%;
     height: 2.375rem;
     padding: 0.375rem 0.75rem;
-    color: #D2D2D2;
+    color: rgba(78, 78, 78);
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid #fcb49a;
+    border: 1px solid #eee;
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .form-control:focus {
-    border-color: #882a08;
+    border-bottom: 0.2rem solid purple;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(235, 104, 95, 0.9);
 }
 
-button {
-    border: none;
-}
 .input-radio, .input-checkbox {
     display: inline-block;
     margin-right: 0.625rem;
@@ -138,18 +142,24 @@ button {
     width: 100%;
     padding: 0.625rem;
     resize: vertical;
-  }
+}
   
   .submit-button {
     display: block;
     width: 100%;
     padding: 0.75rem;
-    background: var(--color-red);
-    color: inherit;
-    border-radius: 2px;
+    background: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-  }
+}
 
+.submit-button:hover{
+    background-color: purple;
+}
+
+ 
 
 @media (min-width: 576px) {
     .container {
