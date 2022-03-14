@@ -55,27 +55,37 @@
 
         <div class="form-group">
             <p>Would You recommend me to a friend?</p>
-            <label>
-                <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />
+            <label class="recommend">
+                <input name="user-recommend" value="definitely" type="radio" class="input-radio" />
                 Definitely
             </label>
-            <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe 
-            </label><br>
+            
+           <label class="recommend" >
+               <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe 
             </label>
-            <input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not Sure
+           
+            <label class="recommend">
+                <input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not Sure
             </label>
+            
         </div>
 
         <div class="form-group">
             <p>Which newsletter content do you prefer?
                 <span id="clue">(Check all that apply)</span>
             </p>
-            <label><input type="checkbox" class="input-checkbox" name="prefer" value="Web Development" />
-                Web Development</label>
-            <label><input type="checkbox" class="input-checkbox" name="prefer" value="personal Development" />
-                personal Development</label>
-            <label><input type="checkbox" class="input-checkbox" name="prefer" value="health" />
-                Health</label>
+            <label class="content">
+                <input type="checkbox" class="input-checkbox" name="prefer" value="Web Development" />
+                Web Development
+            </label>
+            <label class="content">
+                <input type="checkbox" class="input-checkbox" name="prefer" value="personal Development" />
+                personal Development
+            </label>
+            <label class="content">
+                <input type="checkbox" class="input-checkbox" name="prefer" value="health" />
+                Health
+            </label>
         </div>
 
         <div class="form-group">

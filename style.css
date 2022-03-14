@@ -10,8 +10,6 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.4;
     color: var(--color-white);
     margin: 0;
 }
@@ -32,10 +30,6 @@ body::before {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-h1 {
-    line-height: 1.2;
 }
 
 p {
@@ -65,9 +59,15 @@ h1, p {
 
 .description {
     font-style: italic;
-    font-size: 12px;
+    font-size: 1rem;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
+
+.description:hover {
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
 
 /* form */
 
@@ -76,8 +76,7 @@ form {
     color: #000;
     padding: 2.5rem 0.625rem;
     border-radius: 0.25rem;
-    margin:auto;
-    margin:auto auto 30px;
+    margin:auto auto 50px;
     width: 80%;
 
 }
@@ -92,7 +91,7 @@ label {
 input, button, select, textarea {
   margin: 0;
   font-family: inherit;
-  font-size: inherit;
+  font-size: 0.8rem;
   line-height: inherit;
 }
 
@@ -136,6 +135,11 @@ textarea:focus{
     min-height: 1.25rem;
     min-width: 1.25rem;
 }
+
+.recommend, .content{
+    font-size: 0.8rem;
+}
+
   
 .input-textarea {
     min-height: 120px;
